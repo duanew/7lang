@@ -1,0 +1,26 @@
+http://www.learnprolognow.org/
+http://www.csupomona.edu/~jrfisher/www/prolog_tutorial/contents.html
+
+http://old.nabble.com/Gnu---Prolog-f1818.html
+http://www.prologcentral.com/forums/index.php
+
+http://www.cin.ufpe.br/~fjan/GNU-Prolog/doc/gprolog.pdf
+
+-------------------------------------------------------------------------------
+| ?- same_author('C', 'The Sum of All Fears').
+no
+-------------------------------------------------------------------------------
+| ?- same_author('The Hunt for the Red October', 'The Sum of All Fears').
+yes
+-------------------------------------------------------------------------------
+| ?- same_author('The Hunt for the Red October', 'The Hobbit').
+no
+-------------------------------------------------------------------------------
+| ?- same_author('Lord of the Rings', 'The Hobbit').
+yes
+-------------------------------------------------------------------------------
+| ?- same_instrument('David Gilmore','Mark Knopfler').
+
+true ?
+-------------------------------------------------------------------------------
+guitar_players('Mark Knopfler', 'David Gilmore').

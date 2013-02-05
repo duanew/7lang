@@ -1,0 +1,9 @@
+book('Lord of the Rings',Tolkein).
+book('The Hobbit',Tolkein).
+book('Patriot Games',Clancy).
+book('The Hunt for the Red October',Clancy).
+book('The Sum of All Fears',Clancy).
+book(C,'Kernigan & Ritchie').
+
+same_author(X, Y) :- book(X, Z), book(Y, Z).
+
