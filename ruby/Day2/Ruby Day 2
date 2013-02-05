@@ -1,0 +1,46 @@
+#Using gets
+#------------------------------------------------------------------------------
+f = File.new("hello.rb")
+line = f.gets
+puts "Line: #{line}"
+
+#Using code block
+#------------------------------------------------------------------------------
+f = File.new("hello.rb")
+f.each_line {|line| puts "Line: #{line}" }
+
+The code block can be used to read the whole file in in one line of code.
+
+#------------------------------------------------------------------------------
+hash = { 'val1' => '1', 'val2' => '2' }
+
+#Return hash key values
+keys = hash.keys
+puts "First Hash Value #{hash[keys[0]]}"
+
+hash.each_key {|key| puts "Key #{key} Value #{hash[key]}" }
+
+#------------------------------------------------------------------------------
+# Make a flat array from the hash
+#------------------------------------------------------------------------------
+flat = []
+keys = hash.keys
+i = 0
+while i < keys.count
+  flat.push keys[i]
+  flat.push hash[keys[i]]
+  i = i + 1
+end
+
+Using push and pop the array is like a stack.
+
+Arrays can also be a list, queue or set.
+
+list = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
+4.times {}
+list.each
+
+
+
+
+
