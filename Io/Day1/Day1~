@@ -1,0 +1,16 @@
+1 + 1
+2
+
+1 + "one"
+invalid
+
+1 + "1"
+invalid
+
+0 or false
+true
+
+nil or false
+false
+
+

@@ -1,0 +1,21 @@
+1 + 1
+2
+
+1 + "one"
+invalid
+
+1 + "1"
+invalid
+
+0 or false
+true
+
+nil or false
+false
+
+:= creates a new slot as well
+= just assigns value
+::= creates a setter function - I don't know what that is
+
+
+
