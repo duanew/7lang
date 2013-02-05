@@ -1,0 +1,2 @@
+rev([], List, List).
+rev([Tail2|Head], List, [Tail1|Head]) :- rev(Tail2, List, Tail1).
