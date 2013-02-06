@@ -1,0 +1,23 @@
+append1([], List, List).
+append1([Head|Tail1], List, [Head|Tail2]) :-
+	append1(Tail1, List, Tail2).
+
+minlist([Min],Min).
+
+minlist([H,K|T],M) :-
+    H =< K,            
+    minlist([H|T],M).
+
+minlist([H,K|T],M) :-
+    H > K,               
+    minlist([K|T],M).
+
+bubble(L,S) :-
+	append1(X,[A,B|Y],L),
+	minlist(B|A), !,
+	append1(X,[B,A|Y],M),
+	bubble(M,S).
+bubble(L,L).
+
+
+

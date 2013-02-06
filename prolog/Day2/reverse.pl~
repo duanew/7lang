@@ -1,2 +1,6 @@
-rev([], List, List).
-rev([Tail2|Head], List, [Tail1|Head]) :- rev(Tail2, List, Tail1).
+rev(List, Reversed) :-
+          rev(List, [], Reversed).
+
+rev([], Reversed, Reversed).
+rev([Head|Tail], SoFar, Reversed) :-
+          rev(Tail, [Head|SoFar], Reversed).
